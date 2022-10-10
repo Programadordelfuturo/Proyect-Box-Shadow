@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Box Shadow</h1>
+    <div class="container">
+      <div class="option">
+        <div class="container-title">
+          <p class = "titulo"><strong>Shadow</strong></p>
+        </div>
+        <div class="inputs">
+          <div class="array">
+            <strong>Horizontal</strong>
+            <div class="control">
+              <input type= "text"  value = "" class="interior" id="w-shadow"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="-300" max="300" id="range-w-shadow"/>
+        </div>
+        <div class="inputs">
+          <div class="array">
+            <strong>Vertical</strong>
+            <div class="control">
+              <input type= "text" value = "" class="interior" id="h-shadow"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="-300" max="300" id="range-h-shadow"/>
+        </div>
+        <div class="inputs">
+          <div class="array">
+            <strong>Blur Radius</strong>
+            <div class="control">
+              <input type= "text" value = "" class="interior" id="blur-radius"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="0" max="100" id="range-blur-radius"/>
+        </div>
+        <div class="inputs">
+          <div class="array">
+            <strong>Spread Radius</strong>
+            <div class="control">
+              <input type= "text" value = "" class="interior" id="spread-Radius"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="-200" max="200" id="range-spread-Radius"/>
+        </div>
+        <div class="inputsColor">
+          <p>
+            <strong>Color</strong>
+          </p>
+          <input class="painted" value = "rgba(0,0,0,0)" type="text" id="paint-shadow">
+        </div>
+      </div>
+      <div class="square" id = "box"></div>
+      <div class="data">
+        <div class="container-title">
+          <p class = "titulo">
+            <strong>Master Box</strong>
+          </p>
+        </div>
+        <div class="inputs" max="20" />
+          <div class="array">
+            <strong>Border radius</strong>
+            <div> 
+              <input type= "text" value = "" class="interior" id="border-radius"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="0" max="100" id="range-border-radius"/>
+        </div>
+        <div class="inputs" max="20" />
+          <div class="array">
+            <strong>Height</strong>
+            <div> 
+              <input type= "text" value = "" class="interior" id="h"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="0" max="600" id="range-h"/>
+        </div>
+        <div class="inputs" max="20" />
+          <div class="array">
+            <strong>Width</strong>
+            <div> 
+              <input type= "text" value = "" class="interior" id="w"/>
+              <label for="text">px</label>
+            </div>
+          </div>
+          <input type="range" value = "" min="0" max="600" id="range-w"/>
+        </div>
+        <div class="inputsColor">
+          <p>
+            <strong>Color</strong>
+          </p>
+          <input class="painted" value = "rgba(0,0,0,0.1)" type="text" id="master-box">
+        </div>
+        <div class="code">
+          <h3>CODE BOX SHADOW</h3>
+          <input type="text" value = "" id="code">
+        </div>
+      </div>
+    </div> 
+  </body>
+  <script src="./app.js"></script>
+</html>
